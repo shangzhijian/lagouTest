@@ -26,6 +26,8 @@ public class ArgumentTest{
 	}
 
 
+
+
 	public static void main(String[] args){
 
 		//1.声明ArgumentTest引用指向该对象
@@ -36,17 +38,17 @@ public class ArgumentTest{
 		at.show1(ia);
 		System.out.println("ia = " + ia);	//ia = 26
 
-		//2.调用成员方法show2打印，测试引用数据类型传递特点
+		//3.调用成员方法show2打印，测试引用数据类型传递特点
 		System.out.println("--------------------");
 		int[] test = new int[]{26 , 26};
 		at.show2(test);
 		System.out.println("test[0] = " + test[0]); //test[0] = 18;
 
-		//2.调用成员方法show2打印，测试引用数据类型传递特点
+		//4.调用成员方法show2打印，测试引用数据类型传递特点
 		System.out.println("--------------------");
 		at.show3(test);	//test[18 , 26]
 		System.out.println("test[0] = " + test[0]); //test[0] = 18;
 
-
+		
 	}
 }

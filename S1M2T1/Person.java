@@ -29,6 +29,16 @@ public class Person{
 		}
 	}
 
+		//自定义成员方法获取name
+	String getName(){
+		return name;
+	}
+
+	//自定义成员方法获取name
+	int getAge(){
+		return age;
+	}
+
 	public static void main(String[] args){
 
 		//1.声明Person类引用指向Person类对象
@@ -56,6 +66,12 @@ public class Person{
 		p.showArgument(1);
 		p.showArgument(18 , "shang");
 		p.showArgument(26, "aj_shang" , "hello");
+
+		//返回值
+		System.out.println("---------------------------------------");
+		String  name2 = p.getName();
+		int  age2 = p.getAge();
+		System.out.println("name2 = " + name2 + ", age2 = " + age2); // 
 
 	}
 }
