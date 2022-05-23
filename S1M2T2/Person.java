@@ -20,6 +20,10 @@ public class Person{
 		System.out.println("正在执行构造方法");
 	}
 
+	Person getPerson(){
+		return this;
+	}
+
 	void show(){
 		System.out.println("I'm " + getName() + ", age is " +getAge());
 	}
@@ -49,5 +53,10 @@ public class Person{
 		//2.使用有参构造
 		System.out.println("----------------------------------------");
 		Person p2 = new Person();
+
+		System.out.println("p2 = " + p2);
+
+		Person p3 = p2.getPerson();
+		System.out.println("p3 = " + p3);
 	}
 }
