@@ -22,7 +22,7 @@ public class FeeTest{
 			ia = ib;
 			ib = ic;
 		}
-		return ib;		//ic是块变量，只能在语句块儿中使用，出了for语句块无法使用，所以无法返回ic；
+		return ib;		//ic是块变量，只能在语句块儿中使用，出了for语句块无法使用，所以无法返回；
 		
 	}
 
