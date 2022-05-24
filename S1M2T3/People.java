@@ -7,7 +7,7 @@ public class People {
 	//1.私有化成员变量
 	private String name;
 	private int age;
-	private String country;
+	public static String country = "American";
 
 
 	//3.构造方法调用set方法

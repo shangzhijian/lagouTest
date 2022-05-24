@@ -11,5 +11,14 @@
 
  		People p1 = new People("jian" , 26 , "China");
  		p1.show();
+
+
+ 		//测试static修饰，所有对象共享
+ 		//p.setCountry("English");
+ 		System.out.println(p1.country); 
+
+ 		//测试static与创建对象无关
+ 		People p2 =  new People();
+ 		System.out.println(p2.getCountry());
  	}
  }
