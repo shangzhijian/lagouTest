@@ -1,6 +1,6 @@
 /*
-* Dog类继承Animal类
-* */
+ Dog类继承Animal类
+*/
 
 package com.lagou.task08;
 
