@@ -20,7 +20,10 @@ public class ShapeRectTest {
         Shape s2 = new Rect(7,8,9,10);
         s2.show();
 
-
+        //静态父类，子类都有的静态方法
+        s2.test();
+        System.out.println("---------------");
+        Shape.test();
     }
 
 }

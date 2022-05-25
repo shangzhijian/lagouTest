@@ -36,5 +36,9 @@ public class Shape {
         System.out.println("横坐标是" + getX() + ",纵坐标是" + getY());
     }
 
+    public static void test() {
+        System.out.println("Shape中的静态方法");
+    }
+
 
 }

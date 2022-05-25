@@ -48,4 +48,9 @@ public class Rect extends Shape {
         super.show();
         System.out.println("len = " + getLen() + ", wid = " + getWid());
     }
+
+    //虽然与Shape类中的test一样，但是不是重写，加了static静态，与创建对象无关
+    public static void test() {
+        System.out.println("Rect中的静态方法！");
+    }
 }
