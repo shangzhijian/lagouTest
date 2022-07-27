@@ -10,7 +10,7 @@ public class PersonTest {
         } catch (AgeException e) {
             e.printStackTrace();
         }*/
-        Person p1 = new Person("zhangfei",-30);
-        System.out.println("p1 = " + p1);     //zhangfei 0 null
+        Person p = new Person("zhangfei", -10);
+        System.out.println("p = " + p);     //在set里面处理后，对象创建成功，zhangfei 0 ;一路抛出后是null，对象创建失败
     }
 }
