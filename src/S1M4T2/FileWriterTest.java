@@ -13,10 +13,10 @@ public class FileWriterTest {
             // 1.构造FileWrite类型的对象与d:/a.txt文件关联
             // 若文件不存在，该流会自动创建新的空文件
             // 若文件存在，该流会清空文件中的原有内容
-            //fw = new FileWriter("F:/a.txt");
+            //fw = new FileWriter("F:/C.txt");
             // 以追加的方式创建对象去关联文件
             // 若文件不存在则自动创建新的空文件，若文件存在则保留原有数据内容
-            fw = new FileWriter("F:/a.txt", true);
+            fw = new FileWriter("F:/B.txt", true);
             // 2.通过流对象写入数据内容  每当写入一个字符后则文件中的读写位置向后移动一位
             fw.write('a');
 

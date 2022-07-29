@@ -11,12 +11,13 @@ public class DataOutputStreamTest {
 
         try {
             // 1.创建DataOutputStream类型的对象与/Users/shangzhijian/Desktop/lagouTest/a.txt文件关联
-            dos = new DataOutputStream(new FileOutputStream("/Users/shangzhijian/Desktop/lagouTest/B.txt"));
+            //dos = new DataOutputStream(new FileOutputStream("/Users/shangzhijian/Desktop/lagouTest/B.txt"));
+            dos = new DataOutputStream(new FileOutputStream("F:/B.txt"));
             // 2.准备一个整数数据66并写入输出流
             // 66: 0000 0000 ... 0100 0010    =>   B
             int num = 97;
-            //dos.writeInt(num);  // 写入4个字节
-            dos.write(num);// 写入1个字节
+            dos.writeInt(num);  // 写入4个字节
+            //dos.write(num);// 写入1个字节
             System.out.println("写入数据成功！");
         } catch (IOException e) {
             e.printStackTrace();

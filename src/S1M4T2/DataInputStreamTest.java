@@ -11,7 +11,8 @@ public class DataInputStreamTest {
 
         try {
             // 1.创建DataInputStream类型的对象与/Users/shangzhijian/Desktop/lagouTest/a.txt文件关联
-            dis = new DataInputStream(new FileInputStream("/Users/shangzhijian/Desktop/lagouTest/B.txt"));
+            //dis = new DataInputStream(new FileInputStream("/Users/shangzhijian/Desktop/lagouTest/B.txt"));
+            dis = new DataInputStream(new FileInputStream("F:/B.txt"));
             // 2.从输入流中读取一个整数并打印
             int i = dis.read();
             System.out.println("读取的整数是：" + i);
