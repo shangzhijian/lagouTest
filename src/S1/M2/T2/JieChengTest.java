@@ -2,31 +2,32 @@ package S1.M2.T2;/*
 	编程实现阶乘
  */
 
+import java.util.Scanner;
+
 public class JieChengTest{
 
-	int show(int n){
-		
-		int num = 1;
-		for(int i = 1 ; i <= n ; i++){
-			num *= i; 
-		}
-		return num;
+	public static int jieCheng(int n) {
+		//5 = 5 * 4!
+		//4! = 4 * 3!
+		//3! = 3 * 2!
+		//2 = 2 * 1！
+		//1！ = 1
+		//n  = n * (n - 1)!
+		if (1 == n) return 1;
+		else return n * jieCheng(n - 1);
 	}
 
-	int show2(int n){
+	public static void main(String[] args) {
 
-		if(1 == n) return 1; //n == 1时返回阶乘的结果为1
-		return n * show2(n - 1);
-	}
+		//1 输入一个正整数，要进行阶乘运算，并使用变量保存
+		System.out.println("请输入一个正整数");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
 
-	public static void main(String[] args){
-		
-		JieChengTest jct = new JieChengTest();
-		int sum = jct.show(5);
+		//2 调用阶乘的方法，返回结果
+		int res = jieCheng(i);
 
-		System.out.println("sum = " + sum);
-
-		int sum2 = jct.show2(5);
-		System.out.println("sum2= " + sum2);
+		//3 获取返回值并打印
+		System.out.println(i + "的阶乘是" + res);
 	}
 }

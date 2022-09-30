@@ -4,14 +4,12 @@ package S1.M2.T3;/*
 
 public class Singleton {
 
-	//2.声明本类对象引用指向本类型对象==========>对应于普通的私有化成员变量
-	private static Singleton sin = new Singleton();
-
-	//1.私有化构造方法 ====》让只能创建一个对象
+	//1 私有化构造方法，private static 修饰
 	private Singleton() {}
-
-	//3.提供共有的get方法负责将对象返回，
-	public static Singleton getInstence() {
+	//2 Singleton 类型引用指向该类类型的对象 private static 修饰
+	private static Singleton sin = new Singleton();
+	//3 提供get方法返回对象，public static 修饰
+	public static Singleton get() {
 		return sin;
 	}
 }
